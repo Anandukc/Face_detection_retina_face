@@ -72,4 +72,5 @@ Linux/macOS:
 
 ## output result
 
-![](./output_result,png)
+![Output Example](https://github.com/Anandukc/Face_detection_retina_face/raw/main/output_result.png)
+
