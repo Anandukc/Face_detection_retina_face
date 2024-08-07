@@ -66,6 +66,8 @@ Linux/macOS:
 ```bash
   python retina_face.py
 ```
+
+
   
 
 
@@ -74,3 +76,7 @@ Linux/macOS:
 
 ![Output Example](https://github.com/Anandukc/Face_detection_retina_face/raw/main/output_result.png)
 
+
+## reference
+https://github.com/serengil/retinaface
+https://arxiv.org/pdf/1905.00641
