@@ -1,15 +1,11 @@
-# Face detection with landmarks using retina Face
+# AI Chatbot with Web Scraping RAG agent
 
-RetinaFace is a state-of-the-art deep learning-based facial detection system for Python. Originally implemented using the MXNet framework, it has gained popularity for its accuracy in detecting faces and facial landmarks. A TensorFlow-based re-implementation by Stanislas Bertrand has further extended its accessibility. RetinaFace stands out for its superior accuracy and speed compared to other facial detection methods such as dlib, SSD, and MTCNN. Its efficient architecture makes it a preferred choice for applications where both precision and real-time processing are crucial.
+This project is a **two-part machine test** designed to demonstrate AI engineering proficiency in Python, LangChain, OpenAI API integration, REST API development, and session-based chat handling. 
 
+It includes:
 
-
-## Features
-
-- Accurate detection of faces and facial landmarks
-- Efficient and fast processing
-- Implementation in both MXNet and TensorFlow (note: this is the TensorFlow implementation.)
-
+- **Task 1**: A web scraper that uses LangChain to extract, embed, and store content from a given URL into a vector store 
+- **Task 2**: A RESTful chat API using Fastapi that integrates OpenAI GPT with LangChain, leverages RAG (retrieval-augmented generation), and supports user sessions,    message history, and intelligent agent transfer.
 
 
 ## Installation
@@ -20,10 +16,10 @@ Linux/macOS:
 
 ```bash
   # Create a virtual environment
-    python3 -m venv venv
+    python3 -m venv .venv
 
   # Activate the virtual environment
-    source venv/bin/activate
+    source .venv/bin/activate
   
 ```
 
@@ -31,52 +27,54 @@ Linux/macOS:
 
 ```powershell
   # Create a virtual environment
-    python -m venv venv
+    python -m venv .venv
 
   # Activate the virtual environment
-    venv\Scripts\activate
+    .venv\Scripts\activate
   
 ```
 
-- Clone the repository:
 
-
-```bash
-  git clone https://github.com/Anandukc/Face_detection_retina_face.git
-```
-
-
-
-
-
-- Install RetinaFace:
-
-
-```bash
-  pip install retina-face
-```
-
-- Set the image path
-
-  Modify the line ``` 
-  img_path = "path to input image" ``` in the retina_face.py file to the path of ```input_img.jpg```
-
-- Run the script:
-
-```bash
-  python retina_face.py
-```
-
-
+- install requirements:
   
+```bash
+  pip install -r requirements.txt
+```
+
+
+- run task-1(go to task1 directory):
+
+
+```bash
+  cd machine_test/task1
+```
+
+- run main.py to execute task-1:
+
+
+```bash
+  python main.py
+```
+
+
+- go to localhost:8000/ and give the url
 
 
 
-## output result
-
-![Output Example](https://github.com/Anandukc/Face_detection_retina_face/raw/main/output_result.png)
+- run task-2(go to task2 directory):
 
 
-## reference
-https://github.com/serengil/retinaface
-https://arxiv.org/pdf/1905.00641
+```bash
+  cd machine_test/task2
+```
+
+- run main.py to execute task-2:
+
+
+```bash
+  python main.py
+```
+
+
+- go to localhost:7000/ to intract with chatbot ui and localhost:7000/docs to test in swaggerui
+
