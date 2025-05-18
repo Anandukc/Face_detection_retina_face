@@ -42,7 +42,21 @@ Linux/macOS:
 ```
 
 
-- run task-1(go to task1 directory):
+
+
+- configure openai key in .env file:
+  
+```bash
+  #paste your openaikey in .env
+
+OPEN_AI_API_KEY="Your openai api key here"
+
+```
+
+__________________________________________________________________________________________________________
+
+
+- Run **task-1** (go to task1 directory):
 
 
 ```bash
@@ -57,14 +71,14 @@ Linux/macOS:
 ```
 
 
-- go to localhost:8000/ and give the url
+- **go to localhost:8000/ and give the url**
 ___________________________________________________________________________________________________________________
 
 
 
 
 
-- run task-2(go to task2 directory):
+- run **task-2** (go to task2 directory):
 
 
 ```bash
@@ -79,5 +93,5 @@ ________________________________________________________________________________
 ```
 
 
-- go to localhost:7000/ to intract with chatbot ui and localhost:7000/docs to test in swaggerui
+- **go to localhost:7000/ to intract with chatbot ui and localhost:7000/docs to test in swaggerUI**
 
